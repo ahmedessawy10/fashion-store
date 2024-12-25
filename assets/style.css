@@ -16,6 +16,25 @@ a {
   --primary-color: #ca1515;
 
 }
+
+
+.link-count::after{
+  content:  attr(data-count) ;
+  position: absolute;
+  right: -12px;
+  top: -11px;
+  height: 18px;
+  width: 18px;
+  background: #111111;
+  font-size: 10px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+
 #preloader {
   position: fixed;
   width: 100%;
@@ -65,10 +84,35 @@ a {
   font-family: "Cookie", cursive;
 }
 
+/* offcanvase */
+.offcanvas section.links{
+background:#4c4c4c;
+/* color:#fff; */
+}
 
+.offcanvas section.links a ,.offcanvas section.links button{
+  color:#fff;
+}
+.offcanvas section.links button{
+align-self:end;
+font-size:18px;
+  margin: 11px 30px 6px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, .75);
+  border-radius: 4px;
+  background-color: #222;
+
+}
+.offcanvas section.links button span{
+
+}
+/* end offcavans */
 
 /* header */
-
+header{
+  border-bottom:1px soild #eee;
+  box-shadow: 0px 5px 10px rgba(91, 91, 91, 0.1);
+  margin-bottom:20px;
+}
 header a {
   font-size: 18px;
   text-transform: uppercase;
@@ -323,7 +367,7 @@ left:0;
 
 .offers-banner .indicator{
     height: 12px !important;
-    width: 12px !important;
+    width: 14px !important;
     background: #a1a1a1;
     border-radius: 50%;
     margin-right: 10px;

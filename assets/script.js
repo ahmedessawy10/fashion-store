@@ -77,7 +77,7 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
   touch: false
 })
 
-
+// start pereloader
 window.onload=function(){
     var preloader = document.getElementById('preloader');
 preloader.style.display="block"
@@ -85,3 +85,19 @@ preloader.style.display="block"
 preloader.style.display="none"
     },1500)
 }
+
+// end preloader
+
+
+
+// start menu
+
+var menu = document.getElementById('menu');
+var menulist= document.getElementById('menulist');
+menu.addEventListener('click', function () {
+    if (menulist.classList.contains('show')) {
+      bootstrap.Collapse.getInstance(menulist).hide();
+    } else {
+      bootstrap.Collapse(menulist).show();
+    }
+  });
