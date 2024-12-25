@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ecommerce</title>
+
+    <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lily+Script+One&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/fontaawesome/all.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet " href="assets/bootstrap.css " />
+<!-- custom style -->
+    <link rel="stylesheet " href="assets/style.css " />
+
+</head>
+
+<body>
+
+    <!-- preloader -->
+    <div id="preloader" style="display: none;">
+        <div class="loader" ></div>
+    </div>
+<!-- ****************************************** -->
+
+<!-- header ofcanvas -->
+
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <!-- <div class="offcanvas__close">+</div> -->
+    <ul class="offcanvas__widget">
+        <li><span class="icon_search search-switch"></span></li>
+        <li><a href="#"><span class="icon_heart_alt"></span>
+            <div class="tip">2</div>
+        </a></li>
+        <li><a href="#"><span class="icon_bag_alt"></span>
+            <div class="tip">2</div>
+        </a></li>
+    </ul>
+    <div class="offcanvas__logo">
+        <a href="./index.html"><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" style="display:none">
+//<![CDATA[
+window.__mirage2 = {petok:"nDiS4rMi3LOsmpKePlPGKGC3cDycZsn_ilrbtrTaA5k-1800-0.0.1.1"};
+//]]>
+</script>
+<script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
+<img alt="" data-cfsrc="img/logo.png" src="https://preview.colorlib.com/theme/ashion/img/logo.png"></a>
+    </div>
+    <div id="mobile-menu-wrap"><div class="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><nav class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
+                        <ul>
+                            <li class="active"><a href="./index.html" role="menuitem">Home</a></li>
+                            <li><a href="#" role="menuitem">Women’s</a></li>
+                            <li><a href="#" role="menuitem">Men’s</a></li>
+                            <li><a href="./shop.html" role="menuitem">Shop</a></li>
+                            <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style="outline: none;"><a href="#">Pages</a>
+                                <span class="slicknav_arrow">►</span></a><ul class="dropdown slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+                                    <li><a href="./product-details.html" role="menuitem" tabindex="-1">Product Details</a></li>
+                                    <li><a href="./shop-cart.html" role="menuitem" tabindex="-1">Shop Cart</a></li>
+                                    <li><a href="./checkout.html" role="menuitem" tabindex="-1">Checkout</a></li>
+                                    <li><a href="./blog-details.html" role="menuitem" tabindex="-1">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./blog.html" role="menuitem">Blog</a></li>
+                            <li><a href="./contact.html" role="menuitem">Contact</a></li>
+                        </ul>
+                    </nav></div></div>
+                    <div class="offcanvas__auth">
+                        <a href="#">Login</a>
+                        <a href="#">Register</a>
+                    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    <!-- start header -->
+    <header class="py-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-10 px-2">
+                    <section class="logo">
+                        <img src="assets/image/logo.png.webp " alt=" " />
+                    </section>
+                </div>
+                <div class="col-lg-7  d-none  d-lg-block">
+                    <nav class="d-lg-flex ">
+                        <ul>
+                            <li class="px-2 "><a  class="underline-link" href="index.html ">Home</a></li>
+                            <li class="px-2 "><a class="underline-link" href="shop.html ">Shop</a></li>
+                            <li class="px-2 "><a class="underline-link" href="blog.html ">Blog</a></li>
+                            <li class="px-2 "><a class="underline-link" href="contact.html ">pages</a></li>
+                            <li class="px-2 "><a  class="underline-link" href="contact.html ">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-lg-3 px-2  d-none  d-lg-flex align-items-center">
+                    <div class="header__right__auth d-flex align-items-center px-2 fw-light ">
+                        <a  class="fs-6 fw-light px-1" href="#">Login</a>/
+                        <a   class="fs-6 fw-light px-1 " href="#">Register</a>
+                    </div>
+                    <section class="icons d-lg-flex justify-content-center">
+                        <a href="# " class="px-1"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="# " class="px-1"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="# " class="px-1"><i class="fa-solid fa-heart"></i></a>
+                    </section>
+                </div>
+<div class="col-2  d-block d-lg-none ">
+    <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+      <i class="fa-solid fa-bars fs-4 outline-0"></i>
+    </button>
+</div>
+                
+            </div>
+    </header>
+    <!-- end header -->
+    <!-- start banner -->
+
+    <section class="banner ">
+        <div class="container-fluid">
+            <div class="row  row-gap-2 ">
+                <div class="col-lg-6 px-0 ">
+                    <div class="category  d-flex flex-column align-items-start justify-content-center" style="background-image: url('assets/image/category-1.jpg.webp');">
+                        <div class="text ps-4">
+                            <h1 class="cookie-font">Women's Fashion</h1>
+                            <p>Discover the latest trends in women's fashion and find the perfect outfit for any occasion. Shop now!</p>
+                            <a class="underline-link" href="shop.html">Shop Now</a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="row row-gap-2 ps-2 ">
+                        <div class="col-sm-6  ps-0 ">
+                            <div class="category small  d-flex flex-column align-items-start justify-content-center" style="background-image: url('assets/image/category-2.jpg');">
+                                <div class="text ps-4">
+                                    <h1 class="fs-4" >Men's Fashion</h1>
+                                    <p>350 itmes</p>
+                                    <a class="underline-link" href="shop.html">Shop Now</a>
+                                </div>
+                            </div>
+                            </div>
+                        <div class="col-sm-6  ps-0 ">
+                            <div class="category small  d-flex flex-column align-items-start justify-content-center" style="background-image: url('assets/image/category-3.jpg.webp');">
+                                <div class="text ps-4">
+                                    <h1 class="fs-4">Kid's Fashion</h1>
+                                    <p>500 items</p>
+                                    <a class="underline-link" href="shop.html">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6  ps-0 ">
+                            <div class="category small d-flex flex-column align-items-start justify-content-center" style="background-image: url('assets/image/category-4.jpg.webp');">
+                                <div class="text ps-4">
+                                    <h1 class="fs-4">Cosmetics  Fashion</h1>
+                                    <p>500 items</p>
+                                    <a class="underline-link" href="shop.html">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6  ps-0 ">
+                            <div class="category small  d-flex flex-column align-items-start justify-content-center" style="background-image: url('assets/image/category-5.jpg.webp');">
+                                <div class="text ps-4">
+                                    <h1 class="fs-4">Accessories Fashion</h1>
+                                    <p>500 items</p>
+                                    <a class="underline-link" href="shop.html">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+
+           </div>
+            </div>
+        </div>
+    </section>
+                <!-- end banner -->
+
+                <!-- start products -->
+                 <section class="products my-5">
+                    <div class="container">
+                      
+                         <div class="row">
+                               <div class="col-lg-4"> 
+                                <h2 class="section-title">New Products</h2>
+                               </div>
+                               <div class="col-lg-8">
+                                 <ul class="nav nav-pills mb-3" id="category-tab" role="tablist">
+                                <li class="nav-item" role="presentation" data-type="all">
+                                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#all" type="button" role="tab" aria-controls="pills-home" aria-selected="true">all</button>
+                                </li>
+                                <li class="nav-item" role="presentation" data-type="men">
+                                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#men" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" >men's</button>
+                                </li>
+                                <li class="nav-item" role="presentation" data-type="women">
+                                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#women" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" >women's</button>
+                                </li>
+                                <li class="nav-item" role="presentation" data-type="kid">
+                                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#kid" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">kid's</button>
+                                </li>
+                                <li class="nav-item" role="presentation" data-type="accessories">
+                                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#accessories" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" > Accessories </button>
+                                </li>
+                                <li class="nav-item" role="presentation" data-type="cosmetics">
+                                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#cosmetics" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" > Cosmetics </button>
+                                </li>
+                               
+                              </ul>
+                            </div>
+
+                         </div>
+                       
+
+                <div class="tab-content pt-4 " id="products-tab">
+                           
+                        
+                    </div>
+                 </section>
+                <!-- end products -->
+              
+             <section class="offers-banner d-flex align-items-center justify-content-center">
+                <div class="container px-5" >
+                    <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center flex-column" style="height: 430px;">
+                        <div class="carousel-indicators">
+                          <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active  indicator" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button"  class="indicator" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" class="indicator" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner text-center">
+                          <div class="carousel-item active" data-bs-interval="1000">
+                            <span class="text-uppercase">the new collection</span>
+                            <h2 class="text-capitalize">the pioject jacket</h2>
+                            <a href="#" >shop now</a>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="1000">
+                            <span class="text-uppercase">the new collection</span>
+                            <h2 class="text-capitalize">the pioject jacket</h2>
+                            <a href="#" >shop now</a>
+                          </div>
+                          <div class="carousel-item"data-bs-interval="1000">
+                        <span class="text-uppercase">the new collection</span>
+                        <h2 class="text-capitalize">the pioject jacket</h2>
+                        <a href="#">shop now</a>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+             </section>
+
+             <!-- ********************************************************** -->
+
+             <!-- footer -->
+            <footer class="pt-5">
+                <div class="container">
+
+                    <div class="row row-gap-2">
+                        <div class="col-lg-4 col-md-6  d-flex flex-column align-items-center justify-content-start">
+                            <img src="assets/image/logo.png.webp" alt="logo" class="mb-2" style="width: 150px;">
+                            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt cilisis.</P>
+                            <div class="payment d-flex align-items-center justify-content-around column-gap-3">
+                                <a href="#"><img src="assets/image/payment-1.png.webp" alt=""></a>
+                                <a href="#"><img src="assets/image/payment-2.png.webp" alt=""></a>
+                                <a href="#"><img src="assets/image/payment-3.png.webp" alt=""></a>
+                                <a href="#"><img src="assets/image/payment-4.png.webp" alt=""></a>
+                                <a href="#"><img src="assets/image/payment-5.png.webp" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 ">
+                          <h6 class="fw-bold fs-3 pb-2">Quick Links</h6>
+                          <ul class="d-flex flex-column align-items-start fs-5 row-gap-2 ps-0">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-3 ">
+                            <h6 class="fw-bold fs-3 pb-2">Account</h6>
+                            <ul class="d-flex flex-column align-items-start fs-5 alert-info row-gap-2 ps-0">
+                              <li><a href="#">my account</a></li>
+                              <li><a href="#">order tracking</a></li>
+                              <li><a href="#">Check out</a></li>
+                              <li><a href="#">wishkist</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-md-8 ">
+                            <div class="newslatter">
+                                <h6 class="fw-bold fs-3 pb-2">NEWSLETTER</h6>
+                                <form action="#">
+                                    <input type="text" placeholder="Email">
+                                    <button type="submit" class="site-btn">Subscribe</button>
+                                </form>
+                                <div class="social my-3">
+                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    <script src="assets/bootstrap.bundle.js "></script>
+    <script src="assets/products.js"></script>
+                    <script src="assets/script.js "></script>
+
+</body>
+
+</html>
