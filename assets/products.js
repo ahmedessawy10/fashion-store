@@ -3,7 +3,7 @@ const  products=[
     
     {
         id:1,
-        url:"assets/image/product-1.webp",
+        url:"assets/image/product-1.jpg",
         title:"Product 1",
         price:"170$",
         quantity:1,
@@ -21,7 +21,7 @@ const  products=[
     },
     {
         id:3,
-        url:"assets/image/product-3.webp",
+        url:"assets/image/product-3.jpg",
         title:"Product 3",
         price:"200$",
         quantity:1,
