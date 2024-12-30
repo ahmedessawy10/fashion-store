@@ -1,6 +1,6 @@
+import {products}  from './products.js';
 var products_tab = document.getElementById('products-tab');
 var category_tab = Array.from(document.getElementById('category-tab').children);
-
 function create_product(url, type, price, offer = null, name, stars) {
     return `
         

@@ -1,9 +1,9 @@
 
-const  products=[
+ export let products= [
     
     {
         id:1,
-        url:"assets/image/product-1.jpg",
+        url:"assets/image/womandress.jpeg",
         title:"Product 1",
         price:"170$",
         quantity:1,
@@ -12,7 +12,7 @@ const  products=[
     },
     {
         id:2,
-        url:"assets/image/product-2.webp",
+        url:"assets/image/womandress3.jpeg",
         title:"Product 2",
         price:"400$",
         quantity:1,
@@ -21,7 +21,7 @@ const  products=[
     },
     {
         id:3,
-        url:"assets/image/product-3.jpg",
+        url:"assets/image/womandress2.jpeg",
         title:"Product 3",
         price:"200$",
         quantity:1,
