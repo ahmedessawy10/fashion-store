@@ -183,9 +183,29 @@ header a {
   position: relative;
   width:100%;
   background-size:cover;
-  background-position:top right 103%;
+  background-position:top right 98%;
   background-repeat:no-repeat;  
   height:638px;
+}
+
+
+@media (max-width:650px){
+  .banner .category {
+    
+    background-position:top right 66%;
+
+  }
+
+
+}
+@media (min-width:650px) and ( max-width:920px){
+  .banner .category {
+    
+    background-position:top right 102%;
+
+  }
+
+
 }
 .banner .category .text{
   width:65%;

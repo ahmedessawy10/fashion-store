@@ -1,6 +1,24 @@
-import {products}  from './products.js';
+// import {products}  from './products.js';
 var products_tab = document.getElementById('products-tab');
 var category_tab = Array.from(document.getElementById('category-tab').children);
+var products=[];
+
+const xhr=new XMLHttpRequest();
+xhr.open('GET','./assets/products.json');
+xhr.onreadystatechange=function(){
+ 
+    if(xhr.readyState==4 &&  xhr.status==200){
+       var products=JSON.parse(xhr.response);
+       createElementOfproducts(products);
+        console.log("products get correctly");
+    }else{
+        console.log("products failed");
+    }
+
+}
+xhr.send();
+
+
 function create_product(url, type, price, offer = null, name, stars) {
     return `
         
@@ -28,43 +46,47 @@ function create_product(url, type, price, offer = null, name, stars) {
         `;
 }
 
-category_tab.forEach(function(tab,index) {
-    var ele = document.createElement('div');
-    ele.id = tab.dataset.type;
-    if(index === 0){
 
-        ele.className = 'tab-pane fade show active';
-    }else{
-        ele.className = 'tab-pane fade';
-    }
+function createElementOfproducts(products) {
+    category_tab.forEach(function(tab,index) {
+        var ele = document.createElement('div');
+        ele.id = tab.dataset.type;
+        if(index === 0){
     
-    var product_list= document.createElement('section');
-    product_list.className = 'products-list row';
+            ele.className = 'tab-pane fade show active';
+        }else{
+            ele.className = 'tab-pane fade';
+        }
+        
+        var product_list= document.createElement('section');
+        product_list.className = 'products-list row';
+        
     
-
-    // Filter products based on the category type
-    var productsList = (tab.dataset.type !== 'all')
-        ? products.filter(function(product) {
-            return product.type === tab.dataset.type;
-        })
-        : products;
-
-    // If products are found, append them
-    if (productsList.length > 0) {
-        productsList.forEach(function(product) {
-            product_list.innerHTML += create_product(
-                product.url, 
-                product.type, 
-                product.price, 
-                product.offer, 
-                product.title, 
-                product.stars
-            );
-        });
-        ele.appendChild(product_list);
-        products_tab.appendChild(ele);
-    }
-});
+        // Filter products based on the category type
+        var productsList = (tab.dataset.type !== 'all')
+            ? products.filter(function(product) {
+                return product.type === tab.dataset.type;
+            })
+            : products;
+    
+        // If products are found, append them
+        if (productsList.length > 0) {
+            productsList.forEach(function(product) {
+                product_list.innerHTML += create_product(
+                    product.url, 
+                    product.type, 
+                    product.price, 
+                    product.offer, 
+                    product.title, 
+                    product.stars
+                );
+            });
+            ele.appendChild(product_list);
+            products_tab.appendChild(ele);
+        }
+    });
+    
+}
 
 
 

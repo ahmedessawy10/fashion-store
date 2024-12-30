@@ -1,0 +1,112 @@
+[
+    {
+      "id": 1,
+      "url": "assets/image/womandress.jpeg",
+      "title": "Product 1",
+      "price": "170$",
+      "quantity": 1,
+      "stars": 5,
+      "type": "women"
+    },
+    {
+      "id": 2,
+      "url": "assets/image/womandress3.jpeg",
+      "title": "Product 2",
+      "price": "400$",
+      "quantity": 1,
+      "stars": 5,
+      "type": "women"
+    },
+    {
+      "id": 3,
+      "url": "assets/image/womandress2.jpeg",
+      "title": "Product 3",
+      "price": "200$",
+      "quantity": 1,
+      "stars": 5,
+      "type": "women"
+    },
+    {
+      "id": 4,
+      "url": "assets/image/product-4.jpeg",
+      "title": "Product 4",
+      "price": "500$",
+      "quantity": 1,
+      "stars": 5,
+      "type": "men"
+    },
+    {
+      "id": 5,
+      "url": "assets/image/product-5.webp",
+      "title": "Product 5",
+      "price": "100$",
+      "offer": "90$",
+      "quantity": 1,
+      "stars": 5,
+      "type": "men"
+    },
+    {
+      "id": 6,
+      "url": "assets/image/product-6.webp",
+      "title": "Product 6",
+      "price": "100$",
+      "quantity": 1,
+      "stars": 5,
+      "type": "men"
+    },
+    {
+      "id": 7,
+      "url": "assets/image/product-7.webp",
+      "title": "Product 7",
+      "price": "100$",
+      "quantity": 12,
+      "stars": 5,
+      "type": "kid"
+    },
+    {
+      "id": 8,
+      "url": "assets/image/product-8.jpeg",
+      "title": "Product 8",
+      "price": 140,
+      "quantity": 10,
+      "stars": 5,
+      "type": "kid"
+    },
+    {
+      "id": 9,
+      "url": "assets/image/product-9.jpeg",
+      "title": "Product 9",
+      "price": "120$",
+      "quantity": 20,
+      "stars": 5,
+      "type": "kid"
+    },
+    {
+      "id": 10,
+      "url": "assets/image/product-10.jpeg",
+      "title": "Product 10",
+      "price": "100$",
+      "quantity": 1,
+      "stars": 5,
+      "type": "accessories"
+    },
+    {
+      "id": 11,
+      "url": "assets/image/product-11.jpeg",
+      "title": "Product 11",
+      "price": "120$",
+      "quantity": 1,
+      "stars": 5,
+      "type": "accessories"
+    },
+    {
+      "id": 12,
+      "url": "assets/image/product-12.jpeg",
+      "title": "Product 12",
+      "price": "100$",
+      "quantity": 1,
+      "stars": 5,
+      "type": "accessories"
+    }
+  ]
+  
