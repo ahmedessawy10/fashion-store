@@ -107,6 +107,24 @@
       "quantity": 1,
       "stars": 5,
       "type": "accessories"
+    },
+    {
+      "id": 13,
+      "url": "assets/image/product-13.jpeg",
+      "title": "Product 13",
+      "price": "150$",
+      "quantity": 30,
+      "stars": 3,
+      "type": "cosmetics"
+    },
+    {
+      "id": 14,
+      "url": "assets/image/product-14.jpeg",
+      "title": "Product 14",
+      "price": "130$",
+      "quantity": 100,
+      "stars": 4,
+      "type": "cosmetics"
     }
   ]
   
