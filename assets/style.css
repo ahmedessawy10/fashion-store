@@ -17,7 +17,6 @@ a {
 
 }
 
-
 .link-count::after{
   content:attr(data-count) ;
   position: absolute;
@@ -37,6 +36,7 @@ a {
 
 #preloader {
   position: fixed;
+  dislay:flex;
   width: 100%;
   height: 100%;
   top: 0;

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shop page</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Lily+Script+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/fontawesome/all.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet " href="assets/bootstrap/bootstrap.css " />
+    <!-- custom style -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"
+    />
+
+    <link rel="stylesheet " href="assets/style.css " />
+    <script>
+      // Show preloader before the page starts loading
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   document.getElementById("preloader").style.display = "none";
+      // });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  </head>
+
+  <body>
+    <!-- preloader -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <!-- ****************************************** -->
+
+    <!-- header ofcanvas -->
+
+    <section id="header-container"></section>
+    <!-- end header -->
+
+    <!-- navigation -->
+
+    <section class="thumbnail">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="./index.html"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">shop</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!--  shop -->
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 d-flex flex-column align-items-center">
+            <form action="">
+              <section class="category">
+                <h2 class="section-title mb-4">category</h2>
+                <select
+                  name="categories"
+                  id="categories"
+                  class="w-100 form-select fs-5"
+                  aria-label="Default select example"
+                >
+                  <option value="all">all</option>
+                </select>
+              </section>
+              <section class="price">
+                <h2 class="section-title mb-4">price</h2>
+
+                <div id="slider-range"></div>
+                <input
+                  type="text"
+                  id="amount"
+                  name="prices"
+                  readonly=""
+                  style="
+                    border: 0;
+                    color: var(--primary-color);
+                    font-weight: bold;
+                  "
+                />
+              </section>
+
+              <div class="d-flex justify-content-center">
+                <input
+                  type="submit"
+                  id="min"
+                  name="filter"
+                  value="filter"
+                  class="btn mt-3 px-3 fs-5 text-capitalize rounded-bill"
+                  style="background-color: var(--primary-color); color: #fff"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="col-md-9">
+            <div id="products-tab">
+              <!-- data come from api -->
+
+              <div class="row column-gap-2">
+                <div class="card col-lg-3 col-md-4 col-12" aria-hidden="true">
+                  <img
+                    src="https://placehold.co/400x200 "
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title placeholder-glow">
+                      <span class="placeholder col-6"></span>
+                    </h5>
+                    <p class="card-text placeholder-glow">
+                      <span class="placeholder col-7"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-6"></span>
+                      <span class="placeholder col-8"></span>
+                    </p>
+                    <a
+                      class="btn btn-secondary disabled placeholder col-6"
+                      aria-disabled="true"
+                    ></a>
+                  </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-12" aria-hidden="true">
+                  <img
+                    src="https://placehold.co/400x200"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title placeholder-glow">
+                      <span class="placeholder col-6"></span>
+                    </h5>
+                    <p class="card-text placeholder-glow">
+                      <span class="placeholder col-7"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-6"></span>
+                      <span class="placeholder col-8"></span>
+                    </p>
+                    <a
+                      class="btn btn-secondary disabled placeholder col-6"
+                      aria-disabled="true"
+                    ></a>
+                  </div>
+                </div>
+
+                <div class="card col-lg-3 col-md-4 col-12" aria-hidden="true">
+                  <img
+                    src="https://placehold.co/400x200"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title placeholder-glow">
+                      <span class="placeholder col-6"></span>
+                    </h5>
+                    <p class="card-text placeholder-glow">
+                      <span class="placeholder col-7"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-6"></span>
+                      <span class="placeholder col-8"></span>
+                    </p>
+                    <a
+                      class="btn btn-secondary disabled placeholder col-6"
+                      aria-disabled="true"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="pt-5"></footer>
+
+    <script src="assets/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- <script type="module" src="assets/javascript/script.js "></script> -->
+    <script type="module" src="assets/javascript/reuse.js"></script>
+    <script type="module" src="assets/javascript/shop.js"></script>
+  </body>
+</html>
