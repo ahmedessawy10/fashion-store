@@ -44,6 +44,7 @@ tbody.addEventListener('click', (e) => {
 
         localStorage.setItem('cart', JSON.stringify(products));
         updateCart(products);
+        toastr.success('cart update', 'Success');
         update_cart_counter();
     }
 });

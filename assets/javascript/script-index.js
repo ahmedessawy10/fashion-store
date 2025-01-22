@@ -31,6 +31,7 @@ promsCategory.then((categories) => {
     console.log(err);
 });
 
+
 function createElementOfCategories(categories) {
     let index = 0;
     const allTab = document.createElement('li');
@@ -82,11 +83,12 @@ promsProducts.then((products) => {
 
 
 function createElementOfProducts(products) {
+     products_tab.innerHTML="";
    document.querySelectorAll('#category-tab li').forEach((tab) => {
         const tabPane = document.createElement('div');
         tabPane.id = tab.dataset.type;
         tabPane.className = `tab-pane fade ${tab.dataset.type === 'all' ? 'show active' : ''}`;
-        
+        console.log(tab.dataset.type);
         const productList = document.createElement('section');
         productList.className = 'products-list row';
 
@@ -94,7 +96,7 @@ function createElementOfProducts(products) {
             ? products
             : products.filter(product => product.category.replace(/[\s']+/g, '') === tab.dataset.type);
 
-           
+         
             
         filteredProducts.forEach(product => {
             productList.innerHTML += create_product(
@@ -107,7 +109,7 @@ function createElementOfProducts(products) {
                 product.rating.rate
             );
         });
-        products_tab.innerHTML="";
+           
         tabPane.appendChild(productList);
         products_tab.appendChild(tabPane);
 
@@ -128,11 +130,14 @@ function createElementOfProducts(products) {
                           
                           if (product) {
                           addToCart(product);
+                         
+                          update_cart_counter();
+                          toastr.success('Product added to cart'); // Ensure cart count is updated
+                      
                           }
                       } else {
                           console.log('Product ID not found');
                       }
-                      update_cart_counter();
                   });
               });
     }

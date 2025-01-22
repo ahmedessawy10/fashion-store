@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/fontawesome/all.css" />
     <!-- bootstrap -->
     <link rel="stylesheet " href="assets/bootstrap/bootstrap.css " />
+    <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
     <!-- custom style -->
     <link rel="stylesheet " href="assets/style.css " />
   </head>
@@ -104,9 +105,14 @@
               
             </div>
             <div class="row col-12 col-lg-6">
-              <div class="col-12  col-lg-6">
+              <div class="col-12  col-lg-6" style="padding:0px 60px">
                 <h3>total</h3>
-                 <span id="cart-total" style="color:var(--primary-color)"></span>
+                 <span id="cart-total" style="color: var(--primary-color);
+                 font-size: 30px;
+                 text-align: center;
+                 margin: 0 auto;
+                 /* display: block; */
+                 font-weight: bold;"></span>
             </div>
           </div>
           </div>
@@ -117,8 +123,9 @@
     <!-- footer -->
     <footer class="pt-5"></footer>
     <script src="assets/bootstrap/bootstrap.bundle.js"></script>
-
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script type="module" src="assets/javascript/reuse.js"></script>
+  
     <script  type="module" src="assets/javascript/cart.js"></script>
   </body>
 </html>

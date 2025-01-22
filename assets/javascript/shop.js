@@ -173,13 +173,16 @@ function createElementOfProducts(products) {
                     console.log(product);
                     if (product) {
                     addToCart(product);
+                    update_cart_counter();
+                    toastr.success('Product added to cart');
                     }
                 } else {
                     console.log('Product ID not found');
+                    toastr.error('Product not found ', 'Error', {    timeOut: 2000,  positionClass: 'toast-top-right',  preventDuplicates: true,  });
                 }
             });
         });
-        update_cart_counter();
+      
     } 
   
 }
